@@ -1,6 +1,4 @@
-alert("this script injected");
-
-//console.log('injected SC script');
+alert("This script has been injected by the proxy server.");
 
 /** @license
  * DHTML Snowstorm! JavaScript-based snow for web pages
