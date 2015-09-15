@@ -9,10 +9,10 @@
           position: fixed;
           top: 10px;
           right: 100px;
-          border: 5px solid blue;
+          border: 5px solid #000;
           border-radius: 10px;
           z-index: 99999;
-          width: 320px;
+          width: 305px;
         }
 
         div.sc-toolbox header {
@@ -27,6 +27,8 @@
         div.sc-toolbox textarea{
           width: 291px;
           height: 184px;
+          background-color: #232b2e;
+          color: #FFFFFF;
         }
 
         div.sc-toolbox section{
@@ -45,15 +47,15 @@
 	    <h1>Script Generator</h1>
 	</header>
 	<section>
+            <h3>Options</h3>
 	    <a href="#" class="select">Select an element</a>
 	    <a href="#" class="generate">Generate script</a>
-	    <h2>
+            <h3>Status</h3>
                 <select name="statusselect">
                    <option>Status 1 (Basket)</option>
 		   <option>Status 2 (Checkout)</option>
 		   <option>Status 3 (Completion)</option>
                 </select>
-            </h2>
 
 	    <h2>Script</h2>
 	    <textarea id="script">
