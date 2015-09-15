@@ -12,7 +12,7 @@
           border: 5px solid blue;
           border-radius: 10px;
           z-index: 99999;
-          width: 300px;
+          width: 320px;
         }
 
         div.sc-toolbox header {
@@ -27,16 +27,33 @@
           width: 291px;
           height: 184px;
         }
+
+        div.sc-toolbox section{
+          margin: 5px;
+        }
+
+        div.sc-toolbox a{
+          color: rgb(0, 0, 0);
+          font-weight: bold;
+          text-decoration: underline;
+          display: inline;
+        }
     </style>
     <div class="sc-toolbox">
 	<header>
 	    <h1>Toolbox</h1>
 	</header>
 	<section>
-	    <ul>
-		<li><a href="#" class="select">Select an element</a></li>
-		<li><a href="#" class="generate">Generate script</a></li>
-	    </ul>
+	    <a href="#" class="select">Select an element</a>
+	    <a href="#" class="generate">Generate script</a>
+	    <h2>
+                <select name="statusselect">
+                   <option>Status 1 (Basket)</option>
+		   <option>Status 2 (Checkout)</option>
+		   <option>Status 3 (Completion)</option>
+                </select>
+            </h2>
+
 	    <h2>Script</h2>
 	    <textarea id="script">
 
