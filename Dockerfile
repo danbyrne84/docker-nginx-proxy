@@ -4,7 +4,6 @@ RUN apt-get update -yy
 
 RUN apt-get install nginx nginx-extras openssl -yy
 
-ADD nginx.conf /etc/nginx/nginx.conf
 ADD www /var/www
 
 RUN mkdir /home/proxy
@@ -21,5 +20,7 @@ RUN openssl req -new \
 
 # strip the password
 RUN openssl rsa -in /home/proxy/proxy.key -passin pass:dummy -out /home/proxy/proxy.key
+
+ADD nginx.conf /etc/nginx/nginx.conf
 
 CMD ["nginx", "-g", "daemon off;"]
